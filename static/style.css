@@ -1,0 +1,21 @@
+body{
+    background-color: dodgerblue;
+    color: white;
+}
+a{
+    background-color: rgb(78, 76, 76);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#pattern {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div{
+    margin: 30px;
+    flex: 30%;
+
+}

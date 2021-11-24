@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>{{ title }} - Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <p>Input 1: {{ calculator.num1 }}</p>
+        <p>Input 2: {{ calculator.num2 }}</p>
+    <section id="pattern">
+        <div>
+           <a href="http://127.0.0.1:5000/add/{{ calculator.num1 }}/{{ calculator.num2 }}">Add</a>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:5000/subtract/{{ calculator.num1 }}/{{ calculator.num2 }}">Subtract</a>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:5000/multiply/{{ calculator.num1 }}/{{ calculator.num2 }}">Multiply</a>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:5000/divide/{{ calculator.num1 }}/{{ calculator.num2 }}">Divide</a>
+        </div>
+    </section>
+    </body>
+</html>
